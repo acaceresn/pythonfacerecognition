@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<p>You submitted the following data:</p>
+<table>
+<tr><td>Image URL:</td><td>{{ the_imageurl }}</td></tr>
+</table>
+<br>
+<br>
+The following results are returned:</p>
+<img src={{ the_results }}  alt='Face Recognition' width='auto' height='300' >
+
+{% endblock %}

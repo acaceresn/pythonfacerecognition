@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/detector'>
+<table>
+<p>Use this form to submit a search request:</p>
+<tr><td>Image URL :</td><td><input name='imageurl' type='TEXT' width='60'></td></tr>
+<tr><td>Image :</td><td><img name='image' ></td></tr>
+</table>
+<p>Click this button:</p>
+<p><input value='Process!' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
